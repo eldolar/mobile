@@ -19,7 +19,7 @@ class Main extends Component {
     return (
       <Layout>
       <HeaderMain lastUpdate={this.props.updatedAt} refresh={this.props.getExchanges} navigation={this.props.navigation}/>
-      <BankList banks={this.props.exchanges}/>
+      <BankList refresh={this.props.getExchanges} loading={this.props.loading} banks={this.props.exchanges}/>
       </Layout>
     )
   }
