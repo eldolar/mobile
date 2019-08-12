@@ -6,7 +6,7 @@ export default StyleSheet.create({
     borderRadius: 15,
     borderColor: 'white',
     padding: 10,
-    width: 200,
+    width: 250,
     margin: 10,
     alignSelf: 'center',
     shadowColor: 'black',
@@ -19,10 +19,22 @@ export default StyleSheet.create({
     color: 'white',
     textAlign: 'center',
     marginBottom: 20,
+    fontSize: 21,
+    fontWeight: 'bold',
   },
   exchangeContainer: {
     flexDirection: 'row',
     justifyContent: 'space-evenly',
+  },
+  exchangeTitle: {
+    fontSize: 16,
+    color: "#dedede",
+    fontWeight: 'bold',
+  },
+  exchangePrice: {
+    fontSize: 19,
+    color: "#dedede",
+    fontWeight: '400',
   },
   exchange: {
     flexDirection: 'column',

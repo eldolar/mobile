@@ -1,19 +1,19 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import PropTypes from 'prop-types';
 import styles from './styles';
+import PropTypes from 'prop-types';
 
 const Bank = ({ name, sell, buy }) => (
   <View style={[styles.box, !hasExchange(sell, buy) && styles.noData]} >
     <Text style={styles.name}>{name}</Text>
     <View style={styles.exchangeContainer}>
       <View style={styles.exchange}>
-        <Text>Venta</Text>
-        <Text>{sell}</Text>
+        <Text style={styles.exchangeTitle}>Venta</Text>
+        <Text style={styles.exchangePrice}>{sell}</Text>
       </View>
       <View style={styles.exchange}>
-        <Text>Compra</Text>
-        <Text>{buy}</Text>
+        <Text style={styles.exchangeTitle}>Compra</Text>
+        <Text style={styles.exchangePrice}>{buy}</Text>
       </View>
     </View>
   </View>
@@ -29,17 +29,16 @@ const hasExchange = (sell, buy) => {
   return true;
 }
 
+export default Bank
+
 Bank.defaultProps = {
   name: 'No Data',
   sell: 'PropTypes.string',
   buy: ''
 };
 
-
 Bank.propTypes = {
   name: PropTypes.string.isRequired,
   sell: PropTypes.string,
   buy: PropTypes.string
 }
-
-export default Bank
