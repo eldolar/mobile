@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 const HeaderMain = ({lastUpdate, refresh, navigation}) => (
   <View style={styles.headerContainer}>
     <View style={styles.dates}>
-      <Text style={styles.dateDescription}>ultima actualizacion</Text>
+      <Text style={styles.dateDescription}>Última actualización</Text>
       <Text style={styles.dateUpdated}>{lastUpdate}</Text>
     </View>
     <TouchableOpacity
@@ -15,7 +15,7 @@ const HeaderMain = ({lastUpdate, refresh, navigation}) => (
       onPress={() => navigation.navigate('About')}
     >
       <Text style={styles.textAbout}>
-        About
+        Sobre
       </Text>
     </TouchableOpacity>
   </View>
@@ -32,7 +32,7 @@ HeaderMain.defaultProps = {
 HeaderMain.propTypes = {
   lastUpdate: PropTypes.string,
   refresh: PropTypes.func,
-  navigation:  PropTypes.shape({
-    navigate: {}
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func
   })
 };

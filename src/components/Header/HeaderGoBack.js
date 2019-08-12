@@ -2,6 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 import Icon from "react-native-vector-icons/Ionicons";
 import styles from './styles';
+import PropTypes from 'prop-types';
 
 const HeaderGoBack = ({navigation}) => (
   <View elevation={5} style={styles.headerContainer}>
@@ -16,3 +17,13 @@ const HeaderGoBack = ({navigation}) => (
 )
 
 export default HeaderGoBack;
+
+HeaderGoBack.defaultProps = {
+  navigation: {},
+};
+
+HeaderGoBack.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func
+  })
+};

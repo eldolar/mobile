@@ -27,7 +27,6 @@ export default StyleSheet.create({
   dateDescription: {
     textDecorationLine: 'underline',
     color: '#dedede'
-    // color: '#e6e6e6'
   },
   dateUpdated: {
     fontWeight: '400',
@@ -42,6 +41,5 @@ export default StyleSheet.create({
     color: 'white',
     fontSize: 18,
     fontWeight: '400',
-    // textDecorationLine: 'underline'
   }
 })
