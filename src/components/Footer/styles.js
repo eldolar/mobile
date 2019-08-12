@@ -7,14 +7,17 @@ export default StyleSheet.create({
     borderTopColor: '#7c58ad',
     paddingTop: 5,
     shadowColor: 'black',
-    shadowOffset: { width: 3, height: 5},
+    shadowOffset: { width: -3, height: -5},
     shadowOpacity: 0.4,
     shadowRadius: 4,
     elevation: 5,
   },
-  // About Footer
-  backArrow: {
+  icon: {
     paddingHorizontal: 10,
     alignSelf: 'center',
   },
+  iconContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center'
+  }
 })
