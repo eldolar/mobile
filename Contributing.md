@@ -111,9 +111,3 @@ git push --force-with-lease origin my-branch
 
 Feel free to post a comment in the Pull Request to ping reviewers if you are awaiting an answer on something.
 Thank you.
-
-
-# Contributors :
-1. [Salil Cuncoliencar](https://github.com/salilbc)
-
-
